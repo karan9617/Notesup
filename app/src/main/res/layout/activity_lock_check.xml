@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backblur"
+    android:id="@+id/relative"
+    tools:context=".LockCheck">
+
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+
+        android:src="@drawable/left_arrow"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/lockimage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/notepadd"
+
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:fontFamily="@font/courgette"
+        android:text="Notepad +"
+        android:textColor="#fff"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearPattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="210dp"
+        android:background="#334278E3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patternmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Enter pattern"
+
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+        <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/pattern_lock_view"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="14dp"
+            android:background="#331F8FFF"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+
+            android:keepScreenOn="true"
+            app:correctStateColor="#fff"
+            app:normalStateColor="#fff"
+            app:wrongStateColor="#F60D37"
+
+            />
+        <TextView
+            android:id="@+id/forgotPattern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Forgot pattern"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearOfPassword"
+        android:layout_alignTop="@+id/linear"
+        android:layout_marginTop="320dp"
+        >
+
+        <TextView
+            android:id="@+id/passwordmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Enter password"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Password"
+            android:layout_marginBottom="8dp"
+            android:inputType="numberPassword"
+            android:textColor="#FFFFFF"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#6C5F5F" />
+
+        <TextView
+            android:id="@+id/forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Forgot password"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/click"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#8068A4E3"
+            android:fontFamily="serif"
+            android:text="Unlock"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearForgot"
+        android:layout_alignTop="@+id/linear"
+        android:layout_marginTop="320dp"
+        >
+        <TextView
+            android:id="@+id/messageForget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Email incorrect"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/forgotText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="Enter the registered email ID"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edittextForEmail"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Registered Email ID"
+            android:layout_marginBottom="8dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#6C5F5F" />
+
+
+        <Button
+            android:id="@+id/forgotClick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#8068A4E3"
+            android:fontFamily="serif"
+            android:text="CONFIRM"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearPassSetup"
+        android:layout_alignTop="@+id/linear"
+        android:layout_marginTop="320dp"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/setupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="password do not match"
+
+            android:textColor="#E8C6C6"
+            android:textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edittextForSetup1"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Enter password (Numbers)"
+            android:layout_marginBottom="8dp"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#6C5F5F" />
+
+        <EditText
+            android:id="@+id/edittextForSetup2"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="Re-enter password (Numbers)"
+            android:layout_marginBottom="8dp"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:textColor="#FFFFFF"
+
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittext"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColorHint="#6C5F5F" />
+        <TextView
+            android:id="@+id/randomWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="NOTE: Change your password again on login"
+
+            android:textColor="#E8C6C6"
+            android:textSize="13sp" />
+        <Button
+            android:id="@+id/setupClick"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#8068A4E3"
+            android:fontFamily="serif"
+            android:text="CONFIRM"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

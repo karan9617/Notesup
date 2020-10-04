@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.notepadOne.notepaddone">
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/notepadd"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/notepadd"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+      <!--
+       <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-8206113478901010~2151283403"
+
+            />
+-->
+        <activity android:name=".ChangeEmailActivity"></activity>
+        <activity android:name=".LockChange" />
+        <activity
+            android:name=".LockCheck"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StarterActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Main2Activity" /> <!-- android:value="ca-app-pub-3753469604920772~2044885355" -->
+        <activity android:name=".trash.Main3Activity" />
+        <activity android:name=".trash.Main4Activity" />
+        <activity android:name=".howtouse.Main5Activity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".Main7Activity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AppWidgetConfig">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".AppWidgetKeyNote">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

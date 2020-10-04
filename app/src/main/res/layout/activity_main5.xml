@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="#FFF5EE"
+    android:orientation="vertical">
+
+<ImageView
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:src="@drawable/notepadd"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    />
+
+    <TextView
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/actor"
+        android:gravity="center_horizontal"
+        android:text="Notepad Plus"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Notepad Pro is helpful in storing important data of the user in their own device. The data is secured in the memory of the user's phone. The data can be accessed any time and anywhere irrespective of the network connection.
+
+Store notes with titles and search them in the list. You can modify them or create new notes by changing the titles of the existing notes. All the information of the user can be stored in order."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/caution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/capriola"
+        android:text="Caution: The deleted notes are stored in the trash for the user to restore them in future. " />
+</RelativeLayout>

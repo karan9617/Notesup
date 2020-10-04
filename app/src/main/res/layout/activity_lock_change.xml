@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LockChange"
+    android:background="#469AF3"
+    android:layout_margin="5dp"
+    android:id="@+id/relative"
+    >
+<!--
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId = "ca-app-pub-8206113478901010/4647446624"
+            >
+
+        </com.google.android.gms.ads.AdView>
+-->
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+                android:visibility="invisible"
+            android:src="@drawable/left_arrow"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            />
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:text="Enter existing password"
+            android:textColor="#fff"
+            android:textSize="19sp"
+            android:layout_marginTop="50dp"/>
+
+           <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearPatternInitial"
+            android:orientation="vertical"
+               android:visibility="invisible"
+            >
+
+               <TextView
+                   android:id="@+id/errorMessagesForPattern"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:fontFamily="serif"
+                   android:text="Incorrect pattern"
+                   android:textColor="#F40707"
+                   android:textSize="12sp" />
+
+            <com.andrognito.patternlockview.PatternLockView
+                android:id="@+id/pattern_lock_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="14dp"
+
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="120dp"
+                android:background="#1E90FF"
+                android:keepScreenOn="true"
+                app:correctStateColor="#fff"
+                app:normalStateColor="#fff"
+                app:wrongStateColor="#F60D37"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:id="@+id/linearPasswordInitial"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/errorMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Enter New password"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext"
+                android:hint="Password"
+                android:layout_marginBottom="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="#6C5F5F" />
+
+
+            <Button
+                android:id="@+id/click"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="#430019FF"
+                android:text="Verify"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearPatternFinal"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/errorMessagesForPatternFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Incorrect pattern"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp" />
+
+            <com.andrognito.patternlockview.PatternLockView
+                android:id="@+id/pattern_lock_view_final"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="14dp"
+
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="120dp"
+                android:background="#1E90FF"
+                android:keepScreenOn="true"
+                app:correctStateColor="#fff"
+                app:normalStateColor="#fff"
+                app:wrongStateColor="#F60D37"
+
+                />
+
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#51333AC6"
+                android:text="Reset"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:id="@+id/linearPasswordFinal"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/errorMessagesFinal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Email new password"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/passwordTextFinal"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_height="40dp"
+                android:background="@drawable/edittext"
+                android:hint="Password"
+                android:layout_marginBottom="8dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColorHint="#6C5F5F" />
+
+
+            <Button
+                android:id="@+id/clickFinal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="#430019FF"
+                android:text="Set password"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:id="@+id/linearDecision"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:visibility="invisible"
+            >
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Select type of password:"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+            <Button
+                android:id="@+id/patternOption"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="#430019FF"
+                android:text="PATTERN"
+                android:textColor="#fff" />
+            <Button
+                android:id="@+id/passwordOption"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:background="#430019FF"
+                android:text="PASSWORD"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </RelativeLayout>

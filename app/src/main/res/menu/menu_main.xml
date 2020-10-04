@@ -1,0 +1,61 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.karanvishwakarma.newnote.MainActivity">
+
+
+    <item
+        android:id="@+id/action_email_change"
+        android:orderInCategory="100"
+        android:title="@string/action_email_change"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_lock"
+        android:orderInCategory="100"
+        android:title="@string/action_lock"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_howtouse"
+        android:orderInCategory="100"
+        android:title="@string/action_howtouse"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_trash"
+        android:orderInCategory="100"
+        android:title="@string/action_trash"
+        app:showAsAction="never" />
+    <item
+        android:title="Item3"
+        android:id="@+id/colors"
+        android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Item3"
+        android:id="@+id/action_search"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="Notepad Policies"
+        android:id="@+id/action_privacy"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="@string/grid_view"
+        android:id="@+id/grid_view"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="never"
+        />
+    <item
+        android:title="@string/list_view"
+        android:id="@+id/list_view"
+        android:icon="@drawable/searchicon"
+        app:showAsAction="never"
+        />
+
+</menu>

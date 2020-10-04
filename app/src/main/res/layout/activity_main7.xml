@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main7Activity"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notepad Pro"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="23sp"
+        android:textColor="#000"
+
+        />
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@drawable/notepadd"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25px"
+        android:text="The Notepad Pro policy describes the privacy practices of the Notepad Pro Android Application. Notepad Pro is an android based application which enables the user to store data and personal information in the form of notes. A comprehensive guidelines of the way the user's information is handled is described below."/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:text="Information collection and use"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="While using Notepad Pro the user can store data as well as information to keep intact in one application. In the form of notes the data can be accessed later for future references. The personal information shared by the user will be stored in the user's phone and will not be accessible by the Notepad Pro application or any other third party. Only the user is qualified to use the view his or her information. The information is safe in the user phone."/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:layout_marginTop="6dp"
+    android:text="Our access to your content"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="While using Notepad Pro, the user can store data in the form of voice notes as txt. For providing the functionality Notepad Pro uses the microphone permissions from the user phone. The data collected from the microphone is stored in the user's phone. The data is secured in the user's phone and can be retrieved for future use."/>
+
+</LinearLayout>

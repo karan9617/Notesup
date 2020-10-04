@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F3F3"
+    android:id="@+id/relative"
+    tools:context=".ChangeEmailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="14dp"
+        >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/courgette"
+            android:text="Notepad +"
+            android:layout_marginTop="10dp"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/changeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="110dp"
+            android:fontFamily="serif"
+            android:textColor="#000"
+            android:text="Enter registered email:"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:fontFamily="serif"
+            android:text="Enter Registered email:"
+
+            android:textColor="#99F00000"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/emailtextInPattern"
+
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="206dp"
+            android:fontFamily="@font/artifika"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="Enter Email Id"
+            android:textColor="#000000"
+            android:textColorHint="#6C5F5F" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="270dp"
+            android:background="#0072EA"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="NEXT"
+            android:textColor="#000" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

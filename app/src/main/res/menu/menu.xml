@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.karanvishwakarma.newnote.Main2Activity">
+
+    <item
+    android:title="Trash"
+        android:id="@+id/trash"
+    app:showAsAction="never"
+    />
+    <item
+        android:title="How to use?"
+        android:id="@+id/howtouse"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:title="Item6"
+        android:id="@+id/brush"
+        android:icon="@drawable/brush_icon"
+        app:showAsAction="always"
+        />
+
+   <item
+        android:title="Item5"
+        android:id="@+id/voice"
+        android:icon="@drawable/voice_icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Item6"
+        android:id="@+id/share"
+        android:icon="@drawable/share_icon"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Item4"
+        android:id="@+id/save"
+        android:icon="@drawable/icon2"
+        app:showAsAction="always"
+        />
+</menu>
